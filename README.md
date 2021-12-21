@@ -20,9 +20,9 @@ It's necessary to write a program that guesses a number
 **Metrics:**
 Results are estimated by the mean average of 1000 tries.
 
-:arrow_up:[to contents](https://github.com/Judjin-debug/tree/main/testProject/blob/master/README.md#Contents)
+:arrow_up:[to contents](https://github.com/Judjin-debug/testProject/blob/master/README.md#Contents)
 
 ### Short information about data
 ...
 
-:arrow_up:[to contents](https://github.com/Judjin-debug/tree/main/testProject/blob/master/README.md#Contents)
+:arrow_up:[to contents](https://github.com/Judjin-debug/testProject/blob/master/README.md#Contents)
