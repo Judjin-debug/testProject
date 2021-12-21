@@ -1,4 +1,4 @@
-# Project 0. Guess the number.\
+# Project 0. Guess the number.
 
 ## Contents
 [1. Project description](https://github.com/Judjin-debug/testProject/blob/master/README.md#Project-description)
