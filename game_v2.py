@@ -28,12 +28,32 @@ def random_predict(number:int=1) -> int:
             break
     return count
     
-# print(f'Amount of tries:{random_predict()}')
+    
+def random_predict_v2(number:int=1) -> int:
+    
+    count = 0
+    lower_bound = 1
+    upper_bound = 101
+    predict_number = (lower_bound + upper_bound) // 2
+    
+    while True:
+        count += 1
+        if number == predict_number:
+            break
+        elif number > predict_number:
+          lower_bound = predict_number
+          predict_number = (lower_bound + upper_bound) // 2
+        elif number < predict_number:
+          upper_bound = predict_number
+          predict_number = (lower_bound + upper_bound) // 2
+          
+    return count
 
 
 @time_decorator
 def score_game(random_predict) -> int:
-    '''Mean average of 1000 tries of random_predict function to guess a number from 1 to 100
+    '''
+    Mean average of 1000 tries of random_predict function to guess a number from 1 to 100
     
     Args:
       random_predict([type]): guessing function
@@ -41,7 +61,6 @@ def score_game(random_predict) -> int:
     Returns:
       int: mean average of tries
     '''
-
     count_ls = []
     np.random.seed(1)
     random_array = np.random.randint(1, 101, size=(1000))
@@ -57,27 +76,4 @@ def score_game(random_predict) -> int:
 
 if __name__ == '__main__':
     score_game(random_predict)
-
-
-# @time_decorator
-# def score_game_v2(random_predict) -> int:
-#     '''Mean average of 1000 tries of random_predict function to guess a number from 1 to 100
-    
-#     Args:
-#       random_predict([type]): guessing function
-      
-#     Returns:
-#       int: mean average of tries
-#     '''
-    
-#     score = 0
-#     # np.random.seed(1)
-    
-#     for i in range(1000):
-#         score = (score + random_predict(np.random.randint(1, 101))) / 2
-    
-#     score = int(round(score, 0))
-#     print(f'Your algorithm guesses number in average for: {score} tries')
-#     return(score)
-
-# score_game_v2(random_predict)
+    score_game(random_predict_v2)

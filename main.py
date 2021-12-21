@@ -1,1 +1,6 @@
-print("hello world")
+from game_v2 import score_game
+from game_v2 import random_predict
+from game_v2 import random_predict_v2
+
+score_game(random_predict)
+score_game(random_predict_v2)
