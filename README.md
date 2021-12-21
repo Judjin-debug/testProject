@@ -2,10 +2,14 @@
 
 ## Contents
 [1. Project description](https://github.com/Judjin-debug/testProject/blob/master/README.md#Project-description)
+
 [2. What case is solved?](https://github.com/Judjin-debug/testProject/blob/master/README.md#What-case-is-solved)
+
 [3. Short information about data](https://github.com/Judjin-debug/testProject/blob/master/README.md#Short-information-about-data)
+
 [4. Stages of project](https://github.com/Judjin-debug/testProject/blob/master/README.md#Stages-of-project)
-[5. Result] (https://github.com/Judjin-debug/testProject/blob/master/README.md#Result)
+
+[5. Result](https://github.com/Judjin-debug/testProject/blob/master/README.md#Result)
 
 ### Project description
 Guess the number with minimal tries
