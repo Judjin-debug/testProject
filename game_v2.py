@@ -50,7 +50,6 @@ def random_predict_v2(number:int=1) -> int:
     return count
 
 
-@time_decorator
 def score_game(random_predict) -> int:
     '''
     Mean average of 1000 tries of random_predict function to guess a number from 1 to 100
@@ -75,5 +74,9 @@ def score_game(random_predict) -> int:
 
 
 if __name__ == '__main__':
-    score_game(random_predict)
-    score_game(random_predict_v2)
+  
+    new_score_game = time_decorator(score_game)
+    new_score_game(random_predict)
+    
+    new_score_game = time_decorator(score_game)
+    new_score_game(random_predict_v2)
